@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Fill</title>
+    </head>
+    <body>
+        <form id="form">
+        <div>
+            
+           <h6>Fill the mail id</h6> <input label ="mail id" id="contact" type = "text"><br>
+           <h6>Fill the phone number</h6> <input label ="Phonenum" id="Phone" type = "number"><br><br>
+           <h6>Fill the Skill sets</h6> <input label ="Skillset" id="Skills" type = "text"><br><br>
+           <h6>Fill the Languages Known</h6> <input label ="LK" id="Lk" type = "text"><br><br>
+           <h6>Fill the hobbies</h6> <input label ="Hobbies" id="Hobbies" type = "text"><br><br>
+           <h6>Fill the job name </h6> <input label ="Jname" id="Jname" type = "text"><br><br>
+           <h6>Fill the Summary in one line </h6> <input label ="Summ" id="Summ" type = "text"><br><br>
+           <h6>Fill the Experience 1-Title </h6> <input label ="Exp1" id="Exp1" type = "text"><br><br>
+           <h6>Fill the duration of Experience</h6> <input label ="Exp1dur" id="Exp1dur" type = "text"><br><br>
+           <h6>Fill the detailed analysis of Experience</h6> <input label ="Exp1ana" id="Exp1ana" type = "text"><br><br>
+           <h6>Fill the Experience 2-Title </h6> <input label ="Exp2" id="Exp2" type = "text"><br><br>
+           <h6>Fill the duration of Experience</h6> <input label ="Exp2dur" id="Exp2dur" type = "text"><br><br>
+           <h6>Fill the detailed analysis of Experience</h6> <input label ="Exp2ana" id="Exp2ana" type = "text"><br><br>
+           <h6>Fill the college premises details</h6><br>
+           <h6>Fill the college name Ug</h6> <input label ="Clgname" id="Clgname" type = "text"><br><br>
+           <h6>Fill the passed out year</h6> <input label ="pass1" id="pass1" type = "number"><br><br>
+           <h6>Fill the pass percentage</h6> <input label ="pass1per" id="pass1per" type = "number"><br><br>
+           <h6>Fill the college name Pg</h6> <input label ="Clgname2" id="Clgname2" type = "text"><br><br>
+           <h6>Fill the passed out year</h6> <input label ="pass2" id="pass2" type = "number"><br><br>
+           <h6>Fill the pass percentage</h6> <input label ="pass2per" id="pass2per" type = "number"><br><br>
+           <input type ="submit" value="submit" onclick="one.html">
+        </div>
+        </form>
+
+        <script>
+            const form = document.getElementById('form');
+            const contact=document.getElementById('contact');
+            const Phone=document.getElementById('Phone');
+            const Skills=document.getElementById('Skills');
+            const Lk=document.getElementById('Lk');
+            const Hobbies=document.getElementById('Hobbies');
+            const Jname=document.getElementById('Jname');
+            const Summ=document.getElementById('Summ');
+            const Exp1=document.getElementById('Exp1');
+            const Exp1dur=document.getElementById('Exp1dur');
+            const Exp1ana=document.getElementById('Exp1ana');
+            const Exp2=document.getElementById('Exp2');
+            const Exp2dur=document.getElementById('Exp2dur');
+            const Exp2ana=document.getElementById('Exp2ana');
+            const Clgname=document.getElementById('Clgname');
+            const Clgname2=document.getElementById('Clgname2');
+            const pass1=document.getElementById('pass1');
+            const pass2=document.getElementById('pass2');
+            const pass2per=document.getElementById('pass2per');
+            const pass1per=document.getElementById('pass1per');
+            form.addEventListener('submit',function(e)
+            {e.preventDefault();
+                const contactvalue=contact.value;
+                const Phonevalue=Phone.value;
+                const Skillvalue=Skills.value;
+                const Lkvalue=Lk.value;
+                const Hobbiesvalue=Hobbies.value;
+                const Jnamevalue=Hobbies.value;
+                const Summvalue=Summ.value;
+                const Exp1value=Exp1.value;
+                const Exp1durvalue=Exp1dur.value;
+                const Exp1anavalue=Exp1ana.value;
+                const Exp2value=Exp2.value;
+                const Exp2durvalue=Exp2dur.value;
+                const Exp2anavalue=Exp2ana.value;
+                const Clgnamevalue=Clgname.value;
+                const Clgname2value=Clgname2.value;
+                const pass1value=pass1.value;
+                const pass2value=pass2.value;
+                const pass1pervalue=pass1per.value;
+                const pass2pervalue=pass2per.value;
+                localStorage.setItem('contact',contactvalue);
+                localStorage.setItem('Phone',Phonevalue);
+                localStorage.setItem('Skills',Skillvalue);               
+                localStorage.setItem('Lk',Lkvalue);       
+                localStorage.setItem('Hobbies',Hobbiesvalue);               
+                localStorage.setItem('Jname',Jnamevalue);               
+                localStorage.setItem('Summ',Summvalue);               
+                localStorage.setItem('Exp1',Exp1value);               
+                localStorage.setItem('Exp1dur',Exp1durvalue);               
+                localStorage.setItem('Exp1ana',Exp1anavalue);            
+                localStorage.setItem('Exp2',Exp2value);               
+                localStorage.setItem('Exp2dur',Exp2durvalue);               
+                localStorage.setItem('Exp2ana',Exp2anavalue);               
+                localStorage.setItem('Clgname',Clgnamevalue);               
+                localStorage.setItem('Clgname2',Clgname2value);    
+                localStorage.setItem('pass1',pass1value); 
+                localStorage.setItem('pass2',pass2value);
+                localStorage.setItem('pass2per',pass2pervalue);               
+                localStorage.setItem('pass1per',pass1pervalue);
+                window.location.href='one.html';
+            })
+        </script>
+        
+    </body>
+</html>
